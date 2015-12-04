@@ -1,32 +1,12 @@
 package com.emarte.regurgitator.core;
 
 public class Caching {
-	public static Cache getCache(Class clazz) {
-		return new Cache() {
-			@Override
-			public boolean hasValue(Object key) {
-				return false;
-			}
+	private static Log log = Log.getLog(Caching.class);
 
-			@Override
-			public Object getValue(Object key) {
-				throw new UnsupportedOperationException("Caching not implemented for tests");
-			}
+	private static final CacheProvider PROVIDER = new DefaultCacheProvider();
 
-			@Override
-			public Object setValue(Object key, Object value) {
-				// do nothing
-				return null;
-			}
-		};
+	public static <TYPE> Cache<TYPE> getCache(Class<TYPE> clazz) {
+		log.debug("Using default cache");
+		return PROVIDER.getCache(clazz);
 	}
-
-	public static interface Cache {
-		public boolean hasValue(Object key);
-
-		public Object getValue(Object key);
-
-		public Object setValue(Object key, Object value);
-	}
-
 }
