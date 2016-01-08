@@ -1,11 +1,12 @@
 package com.emarte.regurgitator.extensions;
 
+import com.emarte.regurgitator.core.ValueProcessor;
 import com.emarte.regurgitator.test.Mock;
 
 import java.util.Map;
 
-public class XPathProcessor extends Mock {
-	public XPathProcessor(String xpath, Map<String, String> namespaces) {
+public class XpathProcessor extends Mock implements ValueProcessor {
+	public XpathProcessor(String xpath, Map<String, String> namespaces) {
 		super(xpath, namespaces);
 	}
 }
