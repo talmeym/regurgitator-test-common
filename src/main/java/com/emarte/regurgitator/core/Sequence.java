@@ -4,8 +4,8 @@ import com.emarte.regurgitator.test.MockStep;
 
 import java.util.List;
 
-class Sequence  extends MockStep {
-	Sequence(String id, List<Step> steps) {
-		super(id, steps);
+class Sequence extends MockStep {
+	Sequence(String id, List<Step> steps, Isolate isolate) {
+		super(id, steps, isolate);
 	}
 }
