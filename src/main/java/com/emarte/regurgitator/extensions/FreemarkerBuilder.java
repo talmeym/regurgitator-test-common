@@ -4,7 +4,7 @@ import com.emarte.regurgitator.core.*;
 import com.emarte.regurgitator.test.Mock;
 
 public class FreemarkerBuilder extends Mock implements ValueBuilder {
-	public FreemarkerBuilder(ValueSource valueSource) {
-		super(valueSource);
+	public FreemarkerBuilder(ValueSource valueSource, boolean allContexts) {
+		super(valueSource, allContexts);
 	}
 }
