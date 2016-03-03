@@ -5,7 +5,7 @@ import com.emarte.regurgitator.test.MockStep;
 
 public class JsonParameter extends MockStep {
 
-	public JsonParameter(Object id, ParameterPrototype prototype, String context, ContextLocation location, JsonPathProcessor jsonPathProcessor, ValueProcessor processor) {
-		super(id, prototype, context, location, jsonPathProcessor, processor);
+	public JsonParameter(Object id, ParameterPrototype prototype, String context, ValueSource valueSource, JsonPathProcessor jsonPathProcessor, ValueProcessor processor) {
+		super(id, prototype, context, valueSource, jsonPathProcessor, processor);
 	}
 }
