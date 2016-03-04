@@ -6,7 +6,7 @@ public class NumberGenerator extends Mock implements ValueGenerator {
 	public NumberGenerator() {
 	}
 
-	public NumberGenerator(int max) {
+	public NumberGenerator(Integer max) {
 		super(max);
 	}
 }
