@@ -2,7 +2,7 @@ package com.emarte.regurgitator.core;
 
 import java.io.*;
 
-public class FileUtil {
+public final class FileUtil {
 
     static final String CLASSPATH = "classpath:";
 
@@ -18,7 +18,7 @@ public class FileUtil {
 
     private static void checkInputStream(InputStream inputStream, String filepath) throws IOException {
         if (inputStream == null) {
-            throw new IllegalArgumentException("File not found on classpath: " + filepath);
+            throw new FileNotFoundException("File not found on classpath: " + filepath);
         }
         if (inputStream.available() == 0) {
             throw new IllegalArgumentException("File invalid - file is empty");
