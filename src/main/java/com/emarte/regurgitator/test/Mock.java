@@ -27,11 +27,11 @@ public class Mock {
 		return stringBuffer.toString();
 	}
 
-	private String nullSafeToString(Object string) {
-		if(string instanceof String) {
-			string = "'" + string + "'";
+	private String nullSafeToString(Object object) {
+		if(object instanceof String) {
+			object = "'" + object + "'";
 		}
 
-		return string != null ? string.toString() : "null";
+		return object != null ? object.toString() : "null";
 	}
 }
