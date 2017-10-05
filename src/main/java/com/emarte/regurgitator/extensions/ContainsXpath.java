@@ -6,7 +6,7 @@ import com.emarte.regurgitator.test.Mock;
 import java.util.Map;
 
 public class ContainsXpath extends Mock implements ConditionBehaviour {
-	public ContainsXpath(Map<String, String> namespaceUris) {
-		super(namespaceUris);
-	}
+    public ContainsXpath(Map<String, String> namespaceUris) {
+        super(namespaceUris);
+    }
 }

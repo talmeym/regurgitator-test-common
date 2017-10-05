@@ -1,11 +1,11 @@
 package com.emarte.regurgitator.core;
 
 public enum ConflictPolicy {
-	REPLACE,
-	LEAVE;
+    REPLACE,
+    LEAVE;
 
-	@Override
-	public String toString() {
-		return ConflictPolicy.class.getName() + ":" + name();
-	}
+    @Override
+    public String toString() {
+        return ConflictPolicy.class.getName() + ":" + name();
+    }
 }

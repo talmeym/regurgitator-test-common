@@ -6,7 +6,7 @@ import com.emarte.regurgitator.test.Mock;
 import java.util.Map;
 
 public class XpathProcessor extends Mock implements ValueProcessor {
-	public XpathProcessor(String xpath, Map<String, String> namespaces) {
-		super(xpath, namespaces);
-	}
+    public XpathProcessor(String xpath, Map<String, String> namespaces) {
+        super(xpath, namespaces);
+    }
 }

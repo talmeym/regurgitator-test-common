@@ -3,7 +3,7 @@ package com.emarte.regurgitator.core;
 import com.emarte.regurgitator.test.MockStep;
 
 class IdentifySession extends MockStep {
-	IdentifySession(Object id, ValueSource valueSource) {
-		super(id, valueSource);
-	}
+    IdentifySession(Object id, ValueSource valueSource) {
+        super(id, valueSource);
+    }
 }
