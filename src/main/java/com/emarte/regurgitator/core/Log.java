@@ -7,8 +7,12 @@ public class Log {
 		this.clazz = clazz;
 	}
 
-	public void debug(String message) {
-		System.out.println("DEBUG [" + clazz.getName() + "]: " + message);
+	public void debug(String message, Object... objs) {
+		System.out.println(String.format(buildLogEntry(message), objs));
+	}
+
+	private String buildLogEntry(String message) {
+		return "DEBUG [" + clazz.getName() + "] " + message;
 	}
 
 	public static Log getLog(Class clazz){
