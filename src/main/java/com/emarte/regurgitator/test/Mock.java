@@ -1,8 +1,12 @@
+/*
+ * Copyright (C) 2017 Miles Talmey.
+ * Distributed under the MIT License (license terms are at http://opensource.org/licenses/MIT).
+ */
 package com.emarte.regurgitator.test;
 
 public class Mock {
-    private String clazz;
-    private Object[] args;
+    private final String clazz;
+    private final Object[] args;
 
     public Mock(Object... args) {
         this.clazz = getClass().getName();
@@ -11,20 +15,20 @@ public class Mock {
 
     @Override
     public String toString() {
-        StringBuffer stringBuffer = new StringBuffer(clazz + ":[");
+        StringBuilder stringBuilder = new StringBuilder(clazz + ":[");
 
         if (args != null) {
             for (int i = 0; i < args.length; i++) {
-                stringBuffer.append(nullSafeToString(args[i]));
+                stringBuilder.append(nullSafeToString(args[i]));
 
                 if (i < args.length - 1) {
-                    stringBuffer.append(",");
+                    stringBuilder.append(",");
                 }
             }
         }
 
-        stringBuffer.append("]");
-        return stringBuffer.toString();
+        stringBuilder.append("]");
+        return stringBuilder.toString();
     }
 
     private String nullSafeToString(Object object) {

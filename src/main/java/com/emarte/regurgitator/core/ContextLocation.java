@@ -1,12 +1,14 @@
+/*
+ * Copyright (C) 2017 Miles Talmey.
+ * Distributed under the MIT License (license terms are at http://opensource.org/licenses/MIT).
+ */
 package com.emarte.regurgitator.core;
 
 import com.emarte.regurgitator.test.Mock;
 
 public class ContextLocation extends Mock {
-    public static final String PARAMETER_CONTEXT = "parameters";
-
-    static final String SEPARATOR = ":";
-
+    private static final String PARAMETER_CONTEXT = "parameters";
+    private static final String SEPARATOR = ":";
     private final String context;
     private final String name;
 

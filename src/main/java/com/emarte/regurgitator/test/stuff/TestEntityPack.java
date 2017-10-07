@@ -1,9 +1,12 @@
+/*
+ * Copyright (C) 2017 Miles Talmey.
+ * Distributed under the MIT License (license terms are at http://opensource.org/licenses/MIT).
+ */
 package com.emarte.regurgitator.test.stuff;
 
 import com.emarte.regurgitator.core.AbstractEntityPack;
 
 public class TestEntityPack extends AbstractEntityPack {
-
     public TestEntityPack() {
         addRulesBehaviour("test-rules-behaviour", new TestRulesBehaviour());
         addConditionBehaviour("test-condition-behaviour", new TestConditionBehaviour());
