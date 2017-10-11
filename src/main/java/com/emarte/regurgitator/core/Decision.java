@@ -8,8 +8,8 @@ import com.emarte.regurgitator.test.MockStep;
 
 import java.util.List;
 
-class Decision extends MockStep {
-    Decision(String id, List<Step> steps, List<Rule> rules, RulesBehaviour behaviour, Object defaultStepId) {
+public class Decision extends MockStep {
+    public Decision(String id, List<Step> steps, List<Rule> rules, RulesBehaviour behaviour, Object defaultStepId) {
         super(id, steps, rules, behaviour, defaultStepId);
     }
 }

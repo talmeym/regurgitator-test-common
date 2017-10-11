@@ -15,7 +15,7 @@ public class Caching {
         return PROVIDER.getCache(clazz);
     }
 
-    public static class DefaultCacheProvider implements CacheProvider {
+    private static class DefaultCacheProvider implements CacheProvider {
         @Override
         public <TYPE> Cache<TYPE> getCache(Class<TYPE> clazz) {
             return new Cache<TYPE>() {
