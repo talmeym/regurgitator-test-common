@@ -1,7 +1,7 @@
 package com.emarte.regurgitator.extensions.web;
 
 import com.emarte.regurgitator.core.ValueSource;
-import com.emarte.regurgitator.test.*;
+import com.emarte.regurgitator.test.MockStep;
 
 public class CreateFileResponse extends MockStep {
     public CreateFileResponse(Object id, ValueSource valueSource, String pathPrefix) {

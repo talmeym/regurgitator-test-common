@@ -4,7 +4,8 @@
  */
 package com.emarte.regurgitator.extensions;
 
-import com.emarte.regurgitator.core.*;
+import com.emarte.regurgitator.core.ValueBuilder;
+import com.emarte.regurgitator.core.ValueSource;
 import com.emarte.regurgitator.test.Mock;
 
 public class FreemarkerBuilder extends Mock implements ValueBuilder {
