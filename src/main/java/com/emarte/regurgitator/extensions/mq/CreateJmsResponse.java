@@ -8,7 +8,7 @@ import com.emarte.regurgitator.core.CreateResponse;
 import com.emarte.regurgitator.test.MockStep;
 
 public class CreateJmsResponse extends MockStep {
-    public CreateJmsResponse(CreateResponse response, String messageId, String type, String destination, String correlationId, String deliveryMode, String expiration, String priority, String redelivered, String replyTo, String timestamp) {
+    public CreateJmsResponse(CreateResponse response, String messageId, String type, String destination, String correlationId, Long deliveryMode, Long expiration, Long priority, Boolean redelivered, String replyTo, Long timestamp) {
         super(response, messageId, type, destination, correlationId, deliveryMode, expiration, priority, redelivered, replyTo, timestamp);
     }
 }
