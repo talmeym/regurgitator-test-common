@@ -69,6 +69,8 @@ class CoreLoaderTestExpectations {
     static final String Sequence_isolateParams =  "com.emarte.regurgitator.core.Sequence:['sequence-1',[com.emarte.regurgitator.test.stuff.TestStep:['test-step-1'], com.emarte.regurgitator.test.stuff.TestStep:['test-step-2'], com.emarte.regurgitator.test.stuff.TestStep:['test-step-3']],com.emarte.regurgitator.core.Isolate:[false,true]]";
     static final String Sequence_isolateSession = "com.emarte.regurgitator.core.Sequence:['sequence-1',[com.emarte.regurgitator.test.stuff.TestStep:['test-step-1'], com.emarte.regurgitator.test.stuff.TestStep:['test-step-2'], com.emarte.regurgitator.test.stuff.TestStep:['test-step-3']],com.emarte.regurgitator.core.Isolate:[true,false]]";
 
+    static final String SequenceRef_min = "com.emarte.regurgitator.core.Sequence:['regurgitator-configuration-1',[com.emarte.regurgitator.core.CreateParameter:['create-param-1',com.emarte.regurgitator.core.ParameterPrototype:['toTest1',com.emarte.regurgitator.core.StringType:[],com.emarte.regurgitator.core.ConflictPolicy:REPLACE],'parameters',com.emarte.regurgitator.core.ValueSource:[com.emarte.regurgitator.core.ContextLocation:['context:location'],null],[]]],null]";
+
     static final String SizeProcessor =         "com.emarte.regurgitator.core.SizeProcessor:[false]";
     static final String SizeProcessor_asIndex = "com.emarte.regurgitator.core.SizeProcessor:[true]";
 
