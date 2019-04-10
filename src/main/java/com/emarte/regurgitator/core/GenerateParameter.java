@@ -6,8 +6,10 @@ package com.emarte.regurgitator.core;
 
 import com.emarte.regurgitator.test.MockStep;
 
+import java.util.List;
+
 public class GenerateParameter extends MockStep {
-    public GenerateParameter(Object id, ParameterPrototype prototype, String context, ValueGenerator generator, ValueProcessor processor) {
-        super(id, prototype, context, generator, processor);
+    public GenerateParameter(Object id, ParameterPrototype prototype, String context, ValueGenerator generator, List<ValueProcessor> processors) {
+        super(id, prototype, context, generator, processors);
     }
 }

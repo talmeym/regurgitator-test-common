@@ -7,11 +7,13 @@ package com.emarte.regurgitator.test.stuff;
 import com.emarte.regurgitator.extensions.mq.MqMessagingSystem;
 import com.emarte.regurgitator.test.Mock;
 
-import javax.jms.*;
+import javax.jms.Connection;
+import javax.jms.Destination;
+import javax.jms.TextMessage;
 
 public class TestMqMessagingSystem extends Mock implements MqMessagingSystem {
     @Override
-    public Connection getConnection() throws JMSException {
+    public Connection getConnection() {
         throw new UnsupportedOperationException("boom");
     }
 
