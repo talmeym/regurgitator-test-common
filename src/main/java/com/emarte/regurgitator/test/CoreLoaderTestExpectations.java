@@ -64,6 +64,8 @@ class CoreLoaderTestExpectations {
     static final String NumberGenerator =     "com.emarte.regurgitator.core.NumberGenerator:[null]";
     static final String NumberGenerator_max = "com.emarte.regurgitator.core.NumberGenerator:[1234]";
 
+    static final String ListProcessor = "com.emarte.regurgitator.core.ListProcessor:[[com.emarte.regurgitator.test.stuff.TestValueProcessor:[], com.emarte.regurgitator.test.stuff.TestValueProcessor:[]]]";
+
     static final String RecordMessage_min =    "com.emarte.regurgitator.core.RecordMessage:['record-message-1',null]";
     static final String RecordMessage_folder = "com.emarte.regurgitator.core.RecordMessage:['record-message-1','/folder/folder']";
 
