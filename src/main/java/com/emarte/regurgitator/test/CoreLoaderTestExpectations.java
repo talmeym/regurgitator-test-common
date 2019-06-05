@@ -57,9 +57,9 @@ class CoreLoaderTestExpectations {
     static final String IndexOfProcessor_source =         "com.emarte.regurgitator.core.IndexOfProcessor:[com.emarte.regurgitator.core.ValueSource:[com.emarte.regurgitator.core.ContextLocation:['context:location'],null],false]";
     static final String IndexOfProcessor_sourceAndValue = "com.emarte.regurgitator.core.IndexOfProcessor:[com.emarte.regurgitator.core.ValueSource:[com.emarte.regurgitator.core.ContextLocation:['context:location'],'value'],false]";
 
-    static final String IndexProcessor_value =          "com.emarte.regurgitator.core.IndexProcessor:[com.emarte.regurgitator.core.ValueSource:[null,'value']]";
-    static final String IndexProcessor_source =         "com.emarte.regurgitator.core.IndexProcessor:[com.emarte.regurgitator.core.ValueSource:[com.emarte.regurgitator.core.ContextLocation:['context:location'],null]]";
-    static final String IndexProcessor_sourceAndValue = "com.emarte.regurgitator.core.IndexProcessor:[com.emarte.regurgitator.core.ValueSource:[com.emarte.regurgitator.core.ContextLocation:['context:location'],'value']]";
+    static final String AtIndexProcessor_value =          "com.emarte.regurgitator.core.AtIndexProcessor:[com.emarte.regurgitator.core.ValueSource:[null,'value']]";
+    static final String AtIndexProcessor_source =         "com.emarte.regurgitator.core.AtIndexProcessor:[com.emarte.regurgitator.core.ValueSource:[com.emarte.regurgitator.core.ContextLocation:['context:location'],null]]";
+    static final String AtIndexProcessor_sourceAndValue = "com.emarte.regurgitator.core.AtIndexProcessor:[com.emarte.regurgitator.core.ValueSource:[com.emarte.regurgitator.core.ContextLocation:['context:location'],'value']]";
 
     static final String NumberGenerator =     "com.emarte.regurgitator.core.NumberGenerator:[null]";
     static final String NumberGenerator_max = "com.emarte.regurgitator.core.NumberGenerator:[1234]";
@@ -68,6 +68,11 @@ class CoreLoaderTestExpectations {
 
     static final String RecordMessage_min =    "com.emarte.regurgitator.core.RecordMessage:['record-message-1',null]";
     static final String RecordMessage_folder = "com.emarte.regurgitator.core.RecordMessage:['record-message-1','/folder/folder']";
+
+    static final String RemoveAtIndexProcessor_value = "com.emarte.regurgitator.core.RemoveAtIndexProcessor:[com.emarte.regurgitator.core.ValueSource:[null,'param-1']]";
+    static final String RemoveAtIndexProcessor_source = "com.emarte.regurgitator.core.RemoveAtIndexProcessor:[com.emarte.regurgitator.core.ValueSource:[com.emarte.regurgitator.core.ContextLocation:['param-1'],null]]";
+
+    static final String SetAtIndexProcessor_BothSource = "com.emarte.regurgitator.core.SetAtIndexProcessor:[com.emarte.regurgitator.core.ValueSource:[com.emarte.regurgitator.core.ContextLocation:['param-1'],null],com.emarte.regurgitator.core.ValueSource:[com.emarte.regurgitator.core.ContextLocation:['param-2'],null]]";
 
     static final String Sequence_min =            "com.emarte.regurgitator.core.Sequence:['sequence-1',[com.emarte.regurgitator.test.stuff.TestStep:['test-step-1']],null]";
     static final String Sequence_max =            "com.emarte.regurgitator.core.Sequence:['sequence-1',[com.emarte.regurgitator.test.stuff.TestStep:['test-step-1'], com.emarte.regurgitator.test.stuff.TestStep:['test-step-2'], com.emarte.regurgitator.test.stuff.TestStep:['test-step-3']],com.emarte.regurgitator.core.Isolate:[true,true]]";
