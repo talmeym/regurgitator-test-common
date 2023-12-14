@@ -4,19 +4,21 @@
  */
 package com.emarte.regurgitator.core;
 
-public class Log {
-    private final Class clazz;
+import static java.lang.String.format;
 
-    private Log(Class clazz) {
+public class Log {
+    private final Class<?> clazz;
+
+    private Log(Class<?> clazz) {
         this.clazz = clazz;
     }
 
     public void debug(String message, Object... objs) {
         String logEntry = "DEBUG [" + clazz.getName() + "] " + message;
-        System.out.println(String.format(logEntry.replace("{}", "%s"), objs));
+        System.out.println(format(logEntry.replace("{}", "%s"), objs));
     }
 
-    public static Log getLog(Class clazz){
+    public static Log getLog(Class<?> clazz){
         return new Log(clazz);
     }
 }
