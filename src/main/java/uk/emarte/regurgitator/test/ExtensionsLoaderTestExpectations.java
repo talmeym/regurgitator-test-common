@@ -51,6 +51,7 @@ class ExtensionsLoaderTestExpectations {
     static final String XmlParameter_multipleProcessorsFlat = "uk.emarte.regurgitator.extensions.XmlParameter:['xml-parameter-1',uk.emarte.regurgitator.core.ParameterPrototype:['name',uk.emarte.regurgitator.core.StringType:[],uk.emarte.regurgitator.core.ConflictPolicy:REPLACE],'parameters',uk.emarte.regurgitator.core.ValueSource:[uk.emarte.regurgitator.core.ContextLocation:['location'],null],uk.emarte.regurgitator.extensions.XpathProcessor:['xpath/xpath',{prefix2=uri2, prefix1=uri1}],[uk.emarte.regurgitator.test.stuff.TestValueProcessor:[], uk.emarte.regurgitator.test.stuff.TestValueProcessor:[]]]";
 
     static final String XmlSchemaValidator = "uk.emarte.regurgitator.extensions.XmlSchemaValidator:['classpath:/something.something.file']";
+    static final String JsonSchemaValidator = "uk.emarte.regurgitator.extensions.JsonSchemaValidator:['classpath:/something.something.file']";
 
     static final String XpathProcessor_min = "uk.emarte.regurgitator.extensions.XpathProcessor:['xpath/xpath',{prefix2=uri2, prefix1=uri1}]";
     static final String XpathProcessor_max = "uk.emarte.regurgitator.extensions.XpathProcessor:['xpath/xpath',{prefix2=uri2, prefix1=uri1}]";
