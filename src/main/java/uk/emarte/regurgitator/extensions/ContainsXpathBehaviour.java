@@ -9,8 +9,8 @@ import uk.emarte.regurgitator.test.Mock;
 
 import java.util.Map;
 
-public class ContainsXpath extends Mock implements ConditionBehaviour {
-    public ContainsXpath(Map<String, String> namespaceUris) {
+public class ContainsXpathBehaviour extends Mock implements ConditionBehaviour {
+    public ContainsXpathBehaviour(Map<String, String> namespaceUris) {
         super(namespaceUris);
     }
 }
