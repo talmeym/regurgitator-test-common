@@ -12,7 +12,7 @@ import uk.emarte.regurgitator.test.MockStep;
 import java.util.List;
 
 public class JsonParameter extends MockStep {
-    public JsonParameter(Object id, ParameterPrototype prototype, String context, ValueSource valueSource, JsonPathProcessor jsonPathProcessor, List<ValueProcessor> processors) {
-        super(id, prototype, context, valueSource, jsonPathProcessor, processors);
+    public JsonParameter(Object id, ParameterPrototype prototype, String context, ValueSource valueSource, JsonPathProcessor jsonPathProcessor, List<ValueProcessor> processors, boolean optional) {
+        super(id, prototype, context, valueSource, jsonPathProcessor, processors, optional);
     }
 }

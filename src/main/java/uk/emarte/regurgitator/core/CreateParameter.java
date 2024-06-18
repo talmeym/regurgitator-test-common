@@ -9,7 +9,7 @@ import uk.emarte.regurgitator.test.MockStep;
 import java.util.List;
 
 public class CreateParameter extends MockStep {
-    public CreateParameter(Object id, ParameterPrototype prototype, String context, ValueSource valueSource, List<ValueProcessor> processors) {
-        super(id, prototype, context, valueSource, processors);
+    public CreateParameter(Object id, ParameterPrototype prototype, String context, ValueSource valueSource, List<ValueProcessor> processors, boolean optional) {
+        super(id, prototype, context, valueSource, processors, optional);
     }
 }
