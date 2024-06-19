@@ -12,7 +12,7 @@ import uk.emarte.regurgitator.test.MockStep;
 import java.util.List;
 
 public class XmlParameter extends MockStep {
-    public XmlParameter(Object id, ParameterPrototype prototype, String context, ValueSource valueSource, XpathProcessor xpathProcessor, List<ValueProcessor> processors) {
-        super(id, prototype, context, valueSource, xpathProcessor, processors);
+    public XmlParameter(Object id, ParameterPrototype prototype, String context, ValueSource valueSource, XpathProcessor xpathProcessor, List<ValueProcessor> processors, boolean optional) {
+        super(id, prototype, context, valueSource, xpathProcessor, processors, optional);
     }
 }
